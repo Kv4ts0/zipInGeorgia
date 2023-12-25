@@ -293,6 +293,7 @@ header img{
 .map{
     flex-direction: column;
     padding-top: 5rem;
+    padding-bottom: 5rem;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -305,15 +306,20 @@ header img{
     background-size: cover;
     color: white;
 }
-.map h1{
+.map h1, section h1{
     font-size: 2rem;
 }
-.map hr{
+.map hr, section hr{
     width: 10rem;
 }
 .map i{
     position: absolute;
     font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+.map i:hover{
+    color:#76FFA8;
 }
 .map .batumi{
     margin-top: 16rem;
@@ -322,6 +328,36 @@ header img{
 .map .martvili{
     margin-top: 4rem;
     margin-right: 14rem;
+}
+.map .tbilisi{
+    margin-top: 16rem;
+    margin-left: 28rem;
+}
+section{
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+.partners{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 150px;
+    justify-content: center;
+}
+.partners div{
+    width: 150px;
+    height: 120px;
+}
+.partners img{
+    width: 100%;
+    height: 100%;
 }
 @media screen and (max-width: 678px){
     .carousel .list .item .content{
