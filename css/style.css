@@ -777,6 +777,9 @@ footer ul li a:hover{
     width: 310px;
     height: 40px;
 }
+.contact .contactCard .form input:focus, .contact .contactCard .form textarea:focus{
+    outline: none;
+}
 .contact .contactCard .form button{
     width: 310px;
     height: 40px;
@@ -792,6 +795,7 @@ footer ul li a:hover{
     font-weight: 600;
 }
 .contact .contactCard .form textarea{
+    color: white;
     padding: 10px 20px;
     font-family: 'Raleway';
     border-radius: 10px;
